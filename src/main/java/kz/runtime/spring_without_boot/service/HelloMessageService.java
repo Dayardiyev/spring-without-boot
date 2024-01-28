@@ -1,8 +1,10 @@
 package kz.runtime.spring_without_boot.service;
 
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+@Getter
 @Service
 public class HelloMessageService {
     private final String message;
@@ -11,7 +13,4 @@ public class HelloMessageService {
         this.message = message;
     }
 
-    public String getMessage() {
-        return message;
-    }
 }
